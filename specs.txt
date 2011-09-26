@@ -1,0 +1,52 @@
+Peter and I had a chat about what we want this reservation system to do and here are some points:
+
+1. Need various database tables behind it: (Guests, Prices, Bookings) *DONE*
+2.	A Check Availability Button takes them to a Calendar where they can see 1 month, 3 months, 6 months, or 12 months **IN PROGRESS - CURRENTLY next and previous months **
+
+3.	Existing Bookings are shown in one colour, available days in another **DONE**
+4.	When someone clicks on a From date and To Date the boxes fill with another colour **DONE but CHANGED**
+
+	##	Now one clicks on the first date, then selects a 'length of stay' option and the entire group of cells are selected		##
+		
+5.	They can then click a 'Start your Booking' button which presents a form to collect the following information:
+
+	BOOKING INFORMATION
+	Number of Adults:      Children: **DONE**
+	Arrival Date: (defaulted in from Calendar) **DONE**
+	Departure Date: (defaulted in from Calendar) *** WAITING for MUM***
+	Number of Days: (calculated by the program) **DONE** 
+	Payment Method:  Visa, Mastercard, Eftpos, Direct Debit **DONE**
+
+Then a button similar to 'Calculate my Stay' presents them with a confirmation of what they are paying for as well as the calculated costs.
+
+6. Another button asks if they want to 'Book Now?'
+7. Checkbox for Terms and Conditions (mandatory before they can continue)
+8. Clicking the Book Now? button presents a Contact Details form to capture the following information and would include the booking details from the Booking Information form:
+
+	BOOKING REQUEST
+	Contact Information
+	First Name
+	Last Name
+	Address
+	Phone
+	Mobile
+	Email
+	Dietary Requirements (if any)
+
+	Booking Information
+	Information entered on the Booking Information form would default in here (and would be non-maintainable)
+
+	Comments
+	A text area for any questions or comments
+
+9. Clicking a 'Send your Reservation Request' button does the following:
+	Emails the Booking Request to us
+	Emails a copy to the Customer
+	Puts a message up telling them that the Booking Request has been made and that we will contact them to confirm the booking and accept payment. 
+	(The Booking cannot be confirmed until payment is made)
+	Adds a record to the booking database with a tentative status.  The status will be tentative until we contact them and they make the payment.
+
+
+10. Make a system to make days unavailable to customers from Admin page. **DONE**
+11. Weekend/Weekday prices... eg. every saturday default price.. etc. **DONE**
+12. Admin page calendar with ability to click on a date and see the reservation **DONE**

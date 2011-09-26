@@ -1,0 +1,359 @@
+/* @override http://localhost/bookings/css/bookings.css */
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#allcontent {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Helvetica;
+}
+
+#header {
+	position: relative;
+	font: 15px tahoma, arial, helvetica, sans-serif;
+	padding: 5px 0px;
+	
+}
+
+.control {
+	font: 12px tahoma, arial, helvetica, sans-serif;
+	padding: 5px;
+	border: 1px solid #ccc;
+	background: #eee;
+}
+
+#invisible_button {
+	display: inline;
+	background: white;
+	border: none;
+	color: white;
+}
+
+.today_button {
+	display: inline;
+	position: absolute;
+	right: 50px;
+}
+
+#maincalendar {
+	width: 80%;
+	margin: auto;
+}
+
+#maincalendar table.calendar {
+
+	border: 1px solid #999;
+	border-collapse: collapse;
+	margin: 0px auto;
+	width: 100%;
+	height: 100%;
+
+}
+
+#maincalendar td {
+	width: 14.3%;
+	height: 80px;
+	font-size: 12px;
+	border: 1px solid #999;
+	text-align: center;
+	position: relative;
+}
+
+div.day-number {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: #999;
+	padding: 1px;
+	color: #fff;
+	font-weight: bold;
+	float: right;
+	width: 20px;
+	text-align: center;
+}
+
+#maincalendar td.booked-day {
+	background: lightpink;
+	cursor: default;
+}
+
+#maincalendar td.calendar-day-np {
+	background: #eee;
+
+}
+
+#maincalendar td.special-day {
+	background: #fef891;
+
+}
+
+#maincalendar td.calendar-day-head {
+	background: #ccc;
+	font-weight: bold;
+	text-align: center;
+
+	padding: 5px;
+	height: 10px;
+	
+}
+
+#maincalendar td.calendar-day.selected {
+	background: #E6F5FF;
+}
+
+#maincalendar td.available-day:hover {
+	background: #D6F5D6;
+	cursor: pointer;
+}
+
+#maincalendar td.calendar-day-current {
+	border: 2px ridge green;
+}
+
+#maincalendar .bookedtext {
+	color: red;
+}
+
+#maincalendar .availabletext, .pricetext {
+	color: darkgreen;
+}
+
+.smallcalendarheading {
+	text-align: center;
+	text-decoration: underline;
+	color: #444;
+}
+
+/*#smallcalendar1 {
+	display: none;
+}*/
+
+#smallcalendar1,#smallcalendar2 {
+	width: 200px;
+	margin: 10px;
+	cursor: pointer;
+	opacity: 0.75;
+
+}
+
+#smallcalendar1 {
+	margin-left: 12.5%;
+	float: left;
+}
+
+#smallcalendar2 {
+	float: right;
+	margin-right: 12.5%;
+}
+
+#smallcalendar1 table.calendar,#smallcalendar2 table.calendar {
+	height: 100%;
+	border-collapse: collapse;
+	margin: 5px;
+}
+
+#smallcalendar1 td,#smallcalendar2 td {
+	height: 10px;
+	font-size: 13px;
+	border: 1px solid #999;
+	padding: 5px;
+	text-align: center;
+	position: relative;
+}
+
+div.small-day-number {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: #999;
+	padding: 1px;
+	font-size: 9px;
+	color: #fff;
+/*float: right;*/
+	width: 10px;
+	text-align: center;
+}
+
+
+#smallcalendar1 td.booked-day,#smallcalendar2 td.booked-day {
+	background: lightpink;
+	cursor: default;
+}
+
+#smallcalendar1 td.calendar-day-np,#smallcalendar2 td.calendar-day-np {
+	background: #eee;
+	height: 10px;
+}
+
+#smallcalendar1 td.calendar-day-head,#smallcalendar2 td.calendar-day-head {
+	height: 20px;
+	background: #ccc;
+	font-weight: bold;
+	text-align: center;
+	width: 120px;
+	padding: 5px;
+	border-bottom: 1px solid #999;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+}
+
+/* allcalendars shit starts here*/
+
+#allcalendarswrapper {
+	padding: 30px;
+	text-align: center;
+}
+
+.allcalendars {
+	height: 220px;
+	width: 200px;
+	margin: 12px;
+	cursor: pointer;
+	display: inline-block;
+	opacity: 0.8;
+}
+
+.allcalendarsheading {
+	text-align: center;
+	text-decoration: underline;
+	color: #444;
+}
+
+.allcalendarsmonth {
+	height: 200px;
+}
+
+.group1 {
+	margin-bottom: 30px;
+
+}
+
+.group2 {
+	margin-bottom: 30px;
+
+}
+.group1 {
+	margin-bottom: 30px;
+
+}
+.earlymonth {
+	opacity: 0.4;
+	cursor: default;
+}
+
+
+.allcalendars table.calendar {
+	border-left: 1px solid #999;
+	margin: 5px auto 5px auto;
+	height: 100%;
+}
+
+.allcalendars td {
+	height: 15px;
+	font-size: 13px;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding: 5px;
+	text-align: center;
+	position: relative;
+}
+
+div.small-day-number {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: #999;
+	padding: 1x;
+	font-size: 9px;
+	color: #fff;
+/*float: right;*/
+	width: 10px;
+	text-align: center;
+}
+
+
+.allcalendars td.booked-day {
+	background: lightpink;
+	cursor: default;
+}
+
+.allcalendars td.calendar-day-np {
+	background: #eee;
+	
+	
+}
+
+.allcalendars td.calendar-day-head {
+	height: 10px;
+	background: #ccc;
+	font-weight: bold;
+	text-align: center;
+	width: 120px;
+	padding: 5px;
+	border-bottom: 1px solid #999;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+}
+
+
+
+
+
+
+
+
+a {
+	text-decoration: none;
+	color: #535353
+}
+
+
+
+
+#clickcalendartext {
+	width: 500px;
+	margin: 10px auto 10px auto;
+	padding: 10px;
+	color: #777;
+}
+
+#makebooking {
+	width: 800px;
+
+	margin: 10px auto 10px auto;
+	padding: 10px;
+	color: #666;
+	display: none;
+	font: 16px tahoma, arial, helvetica, sans-serif;
+}
+
+form th {
+	text-align: left;
+	padding: 5px;
+}
+
+form td {
+	text-align: left;
+}
+
+.reqfield {
+	color: crimson;
+}
+
+#firstinfoform, #secondinfoform {
+	width: 500px;
+	font-size: 12px;
+}
+
+
+.error {
+	font: normal 11px arial;
+	padding: 3px;
+	margin: 3px;
+	background-color: #ffc;
+	border: 1px solid #c00;
+}
